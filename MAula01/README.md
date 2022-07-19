@@ -15,7 +15,9 @@ private : É o mais restritivo. Atributos e métodos declarados como private só
 O nome de um método deve começar com uma letra (a-z/A-Z), um underscore (_), ou um sinal de dólar ( $ ). Os caracteres subsequentes podem incluir os dígitos de 0 a 9.
  
 Convenção : Use verbos para nome de métodos. Faça a primeira letra do nome
-minúscula com cada letra inicial interna maiúscula. Por exemplo : getUserName(),
+minúscula com cada letra inicial interna maiúscula. 
+Por exemplo : 
+getUserName(),
 getMaxPrice().
 
 - `Argumentos:`
@@ -35,7 +37,7 @@ método, uma cópia deste valor é criada e atribuída para o argumento do méto
 responsável por recebê-la. Se o método mudar este valor, apenas o valor do
 argumento local ao método é afetado. Quando o método terminar sua execução, o valor original da variável utilizada para passar o valor primitivo na chamada do
 método permanecerá inalterado.
- 
+``` 
 public void incrementa (int num) {
 num++;
 System.out.println(“num : ” + num);
@@ -46,6 +48,7 @@ System.out.println(“num : ” + num);
 int num = 10;
 incrementa (num); //Imprimirá 11
 System.out.println(”num : ” + num); //Imprimirá 10
+ ```
  
 Passando a Referência de um Objeto : Quando o tipo passado para o método não for um primitivo mas sim um objeto, esse comportamento muda. Quando passamos um objeto, uma referência ao objeto original é passada ao invés de uma cópia do objeto.
 
